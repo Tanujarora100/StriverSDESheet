@@ -4,6 +4,11 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from typing import Optional
+
+from Tree.BinaryTree.Easy.DiameterTree import TreeNode
+
+
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
       self.total=0

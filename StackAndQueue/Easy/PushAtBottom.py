@@ -1,3 +1,6 @@
+from collections import deque
+
+
 def pushAtBottom(myStack: deque, x: int):
     if len(myStack) == 0:
         myStack.append(x)

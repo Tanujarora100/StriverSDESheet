@@ -1,3 +1,8 @@
+from typing import Optional
+
+from Tree.BinaryTree.Easy.MaxLevelSum import TreeNode
+
+
 class Solution:
     def minCameraCover(self, root: TreeNode) -> int:
         # set the value of camera nodes to 1

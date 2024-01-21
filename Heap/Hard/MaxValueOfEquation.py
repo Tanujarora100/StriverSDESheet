@@ -1,4 +1,5 @@
-import heapq 
+import heapq
+from typing import List 
 class Solution:
     def findMaxValueOfEquation(self, points: List[List[int]], k: int) -> int:
         max_val = float("-inf")

@@ -6,7 +6,7 @@
 #         self.right = right
 from typing import List, Optional
 
-from Tree.BinaryTree.PreOrderTraversal import TreeNode
+from Tree.BinaryTree.Easy.PreOrderTraversal import TreeNode
 
 
 class Solution:

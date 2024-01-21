@@ -4,6 +4,10 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from typing import Optional
+from Tree.BinaryTree.Easy.IterativeInorder import TreeNode
+
+
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
         def dfs(root1,root2):

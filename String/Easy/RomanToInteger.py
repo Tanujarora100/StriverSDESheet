@@ -16,8 +16,3 @@ class RomanToInteger:
                 total += values[s[i]]
 
         return total
-
-# Example Usage:
-# roman_converter = RomanToInteger()
-# result = roman_converter.romanToInt("IX")
-# print("Result:", result)
