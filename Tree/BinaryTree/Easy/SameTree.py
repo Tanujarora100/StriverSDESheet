@@ -6,7 +6,7 @@
 #         self.right = right
 from typing import Optional
 
-from Tree.BinaryTree.DiameterTree import TreeNode
+from Tree.BinaryTree.Easy.DiameterTree import TreeNode
 
 
 class Solution:

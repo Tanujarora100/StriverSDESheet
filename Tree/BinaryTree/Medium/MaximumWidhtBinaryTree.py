@@ -1,6 +1,6 @@
 
 from collections import deque
-from Tree.BinaryTree.IterativeInorder import TreeNode
+from Tree.BinaryTree.Easy.IterativeInorder import TreeNode
 
 
 class Solution:

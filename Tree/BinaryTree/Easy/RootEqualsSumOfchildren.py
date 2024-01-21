@@ -6,7 +6,7 @@
 #         self.right = right
 from typing import Optional
 
-from Tree.BinaryTree.LCA2 import TreeNode
+from Tree.BinaryTree.Medium.LCA2 import TreeNode
 
 
 class Solution:

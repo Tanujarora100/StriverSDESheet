@@ -7,7 +7,7 @@
 import collections
 from typing import List
 
-from Tree.BinaryTree.DiameterTree import TreeNode
+from Tree.BinaryTree.Easy.DiameterTree import TreeNode
 
 
 class Solution:

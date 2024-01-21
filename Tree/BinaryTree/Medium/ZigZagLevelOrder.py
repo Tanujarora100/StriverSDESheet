@@ -8,7 +8,7 @@ from collections import deque
 import collections
 from typing import List
 
-from Tree.BinaryTree.IterativeInorder import TreeNode
+from Tree.BinaryTree.Easy.IterativeInorder import TreeNode
 
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:

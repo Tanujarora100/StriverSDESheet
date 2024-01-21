@@ -1,12 +1,7 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+
 from typing import Optional
 
-from Tree.BinaryTree.IterativeInorder import TreeNode
+from Tree.BinaryTree.Easy.IterativeInorder import TreeNode
 
 
 class Solution:
