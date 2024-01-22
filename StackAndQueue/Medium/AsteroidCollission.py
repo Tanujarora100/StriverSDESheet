@@ -1,26 +1,25 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
         # Purpose: return asteroid after collsion
         # Method: stacks
         # Intuititon: check collion cases (a or stack[-1] is stronger)
         stack = []
-        for a in asteroids:
-            while stack and a < 0 and stack[-1] > 0:
-                dif = a + stack[-1]
-                # a is stronger
-                if dif < 0:
+        for incoming_asteroid in asteroids:
+            while len(stack) > 0 and incoming_asteroid < 0 and stack[-1] > 0:
+                # If coming one is negative and sitting one is positive then a collision can happen
+                if stack[-1] > abs(incoming_asteroid):
+                    incoming_asteroid = 0
+                    # It is less poweful and the asteroid is only added if it is negative or positive and not zero
+                elif stack[-1] < abs(incoming_asteroid):
                     stack.pop()
-                # stack[-1] is stronger
-                elif dif > 0:
-                    break
-                # equal
+                    # Coming asteroid is more powerful than the sitting one
                 else:
+                    # Both are equal
                     stack.pop()
-                    break
-            # no collision
-            else:
-                stack.append(a)
+                    incoming_asteroid = 0
+            if incoming_asteroid > 0 or incoming_asteroid < 0:
+                stack.append(incoming_asteroid)
         return stack

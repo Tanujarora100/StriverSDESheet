@@ -7,7 +7,7 @@ class Solution:
         # Initialize arrays to keep track of rows and columns containing zeros
         row_array = [0] * len(matrix)  # Array to track zero rows
         col_array = [0] * len(matrix[0])  # Array to track zero columns
-
+                                  
         # Find the rows and columns containing zeros
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
